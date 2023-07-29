@@ -2629,4 +2629,9 @@ const congressData = [
   }
 ]
 
-module.exports = congressData;
+const congressAgeDataPoints = congressData.map(m => (Date.now() - Date.parse(m.Birthdate))/(1000*60*60*24*365.25))
+
+module.exports = {
+  congressData,
+  congressAgeDataPoints
+}
