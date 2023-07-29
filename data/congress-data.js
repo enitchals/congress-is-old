@@ -1,4 +1,4 @@
-const congressData = [
+const houseData = [
   {
     "District": "CA-31",
     "Name": "Grace F. Napolitano",
@@ -2629,11 +2629,611 @@ const congressData = [
   }
 ]
 
-const congressMemberNames = congressData.map(m => m.name)
+const senateData = [
+  {
+    "District": "Alabama",
+    "Name": "Tommy Tuberville",
+    "Party": "Republican",
+    "Birthdate": "September 18, 1954"
+  },
+  {
+    "District": "Alabama",
+    "Name": "Katie Britt",
+    "Party": "Republican",
+    "Birthdate": "February 2, 1982"
+  },
+  {
+    "District": "Alaska",
+    "Name": "Lisa Murkowski",
+    "Party": "Republican",
+    "Birthdate": "May 22, 1957"
+  },
+  {
+    "District": "Alaska",
+    "Name": "Dan Sullivan",
+    "Party": "Republican",
+    "Birthdate": "November 13, 1964"
+  },
+  {
+    "District": "Arizona",
+    "Name": "Kyrsten Sinema",
+    "Party": "Independent[d]",
+    "Birthdate": "July 12, 1976"
+  },
+  {
+    "District": "Arizona",
+    "Name": "Mark Kelly",
+    "Party": "Democratic",
+    "Birthdate": "February 21, 1964"
+  },
+  {
+    "District": "Arkansas",
+    "Name": "John Boozman",
+    "Party": "Republican",
+    "Birthdate": "December 10, 1950"
+  },
+  {
+    "District": "Arkansas",
+    "Name": "Tom Cotton",
+    "Party": "Republican",
+    "Birthdate": "May 13, 1977"
+  },
+  {
+    "District": "California",
+    "Name": "Dianne Feinstein",
+    "Party": "Democratic",
+    "Birthdate": "June 22, 1933"
+  },
+  {
+    "District": "California",
+    "Name": "Alex Padilla",
+    "Party": "Democratic",
+    "Birthdate": "March 22, 1973"
+  },
+  {
+    "District": "Colorado",
+    "Name": "Michael Bennet",
+    "Party": "Democratic",
+    "Birthdate": "November 28, 1964"
+  },
+  {
+    "District": "Colorado",
+    "Name": "John Hickenlooper",
+    "Party": "Democratic",
+    "Birthdate": "February 7, 1952"
+  },
+  {
+    "District": "Connecticut",
+    "Name": "Richard Blumenthal",
+    "Party": "Democratic",
+    "Birthdate": "February 13, 1946"
+  },
+  {
+    "District": "Connecticut",
+    "Name": "Chris Murphy",
+    "Party": "Democratic",
+    "Birthdate": "August 3, 1973"
+  },
+  {
+    "District": "Delaware",
+    "Name": "Tom Carper",
+    "Party": "Democratic",
+    "Birthdate": "January 23, 1947"
+  },
+  {
+    "District": "Delaware",
+    "Name": "Chris Coons",
+    "Party": "Democratic",
+    "Birthdate": "September 9, 1963"
+  },
+  {
+    "District": "Florida",
+    "Name": "Marco Rubio",
+    "Party": "Republican",
+    "Birthdate": "May 28, 1971"
+  },
+  {
+    "District": "Florida",
+    "Name": "Rick Scott",
+    "Party": "Republican",
+    "Birthdate": "December 1, 1952"
+  },
+  {
+    "District": "Georgia",
+    "Name": "Jon Ossoff",
+    "Party": "Democratic",
+    "Birthdate": "February 16, 1987"
+  },
+  {
+    "District": "Georgia",
+    "Name": "Raphael Warnock",
+    "Party": "Democratic",
+    "Birthdate": "July 23, 1969"
+  },
+  {
+    "District": "Hawaii",
+    "Name": "Brian Schatz",
+    "Party": "Democratic",
+    "Birthdate": "October 20, 1972"
+  },
+  {
+    "District": "Hawaii",
+    "Name": "Mazie Hirono",
+    "Party": "Democratic",
+    "Birthdate": "November 3, 1947"
+  },
+  {
+    "District": "Idaho",
+    "Name": "Mike Crapo",
+    "Party": "Republican",
+    "Birthdate": "May 20, 1951"
+  },
+  {
+    "District": "Idaho",
+    "Name": "Jim Risch",
+    "Party": "Republican",
+    "Birthdate": "May 3, 1943"
+  },
+  {
+    "District": "Illinois",
+    "Name": "Dick Durbin",
+    "Party": "Democratic",
+    "Birthdate": "November 21, 1944"
+  },
+  {
+    "District": "Illinois",
+    "Name": "Tammy Duckworth",
+    "Party": "Democratic",
+    "Birthdate": "March 12, 1968"
+  },
+  {
+    "District": "Indiana",
+    "Name": "Todd Young",
+    "Party": "Republican",
+    "Birthdate": "August 24, 1972"
+  },
+  {
+    "District": "Indiana",
+    "Name": "Mike Braun",
+    "Party": "Republican",
+    "Birthdate": "March 24, 1954"
+  },
+  {
+    "District": "Iowa",
+    "Name": "Chuck Grassley",
+    "Party": "Republican",
+    "Birthdate": "September 17, 1933"
+  },
+  {
+    "District": "Iowa",
+    "Name": "Joni Ernst",
+    "Party": "Republican",
+    "Birthdate": "July 1, 1970"
+  },
+  {
+    "District": "Kansas",
+    "Name": "Jerry Moran",
+    "Party": "Republican",
+    "Birthdate": "May 29, 1954"
+  },
+  {
+    "District": "Kansas",
+    "Name": "Roger Marshall",
+    "Party": "Republican",
+    "Birthdate": "August 9, 1960"
+  },
+  {
+    "District": "Kentucky",
+    "Name": "Mitch McConnell",
+    "Party": "Republican",
+    "Birthdate": "February 20, 1942"
+  },
+  {
+    "District": "Kentucky",
+    "Name": "Rand Paul",
+    "Party": "Republican",
+    "Birthdate": "January 7, 1963"
+  },
+  {
+    "District": "Louisiana",
+    "Name": "Bill Cassidy",
+    "Party": "Republican",
+    "Birthdate": "September 28, 1957"
+  },
+  {
+    "District": "Louisiana",
+    "Name": "John Kennedy",
+    "Party": "Republican",
+    "Birthdate": "November 21, 1951"
+  },
+  {
+    "District": "Maine",
+    "Name": "Susan Collins",
+    "Party": "Republican",
+    "Birthdate": "December 7, 1952"
+  },
+  {
+    "District": "Maine",
+    "Name": "Angus King",
+    "Party": "Independent[n]",
+    "Birthdate": "March 31, 1944"
+  },
+  {
+    "District": "Maryland",
+    "Name": "Ben Cardin",
+    "Party": "Democratic",
+    "Birthdate": "October 5, 1943"
+  },
+  {
+    "District": "Maryland",
+    "Name": "Chris Van Hollen",
+    "Party": "Democratic",
+    "Birthdate": "January 10, 1959"
+  },
+  {
+    "District": "Massachusetts",
+    "Name": "Elizabeth Warren",
+    "Party": "Democratic",
+    "Birthdate": "June 22, 1949"
+  },
+  {
+    "District": "Massachusetts",
+    "Name": "Ed Markey",
+    "Party": "Democratic",
+    "Birthdate": "July 11, 1946"
+  },
+  {
+    "District": "Michigan",
+    "Name": "Debbie Stabenow",
+    "Party": "Democratic",
+    "Birthdate": "April 29, 1950"
+  },
+  {
+    "District": "Michigan",
+    "Name": "Gary Peters",
+    "Party": "Democratic",
+    "Birthdate": "December 1, 1958"
+  },
+  {
+    "District": "Minnesota",
+    "Name": "Amy Klobuchar",
+    "Party": "Democratic\n(DFL)[p]",
+    "Birthdate": "May 25, 1960"
+  },
+  {
+    "District": "Minnesota",
+    "Name": "Tina Smith",
+    "Party": "Democratic\n(DFL)[p]",
+    "Birthdate": "March 4, 1958"
+  },
+  {
+    "District": "Mississippi",
+    "Name": "Roger Wicker",
+    "Party": "Republican",
+    "Birthdate": "July 5, 1951"
+  },
+  {
+    "District": "Mississippi",
+    "Name": "Cindy Hyde-Smith",
+    "Party": "Republican",
+    "Birthdate": "May 10, 1959"
+  },
+  {
+    "District": "Missouri",
+    "Name": "Josh Hawley",
+    "Party": "Republican",
+    "Birthdate": "December 31, 1979"
+  },
+  {
+    "District": "Missouri",
+    "Name": "Eric Schmitt",
+    "Party": "Republican",
+    "Birthdate": "June 20, 1975"
+  },
+  {
+    "District": "Montana",
+    "Name": "Jon Tester",
+    "Party": "Democratic",
+    "Birthdate": "August 21, 1956"
+  },
+  {
+    "District": "Montana",
+    "Name": "Steve Daines",
+    "Party": "Republican",
+    "Birthdate": "August 20, 1962"
+  },
+  {
+    "District": "Nebraska",
+    "Name": "Deb Fischer",
+    "Party": "Republican",
+    "Birthdate": "March 1, 1951"
+  },
+  {
+    "District": "Nebraska",
+    "Name": "Pete Ricketts",
+    "Party": "Republican",
+    "Birthdate": "August 16, 1964"
+  },
+  {
+    "District": "Nevada",
+    "Name": "Catherine Cortez Masto",
+    "Party": "Democratic",
+    "Birthdate": "March 29, 1964"
+  },
+  {
+    "District": "Nevada",
+    "Name": "Jacky Rosen",
+    "Party": "Democratic",
+    "Birthdate": "August 2, 1957"
+  },
+  {
+    "District": "New Hampshire",
+    "Name": "Jeanne Shaheen",
+    "Party": "Democratic",
+    "Birthdate": "January 28, 1947"
+  },
+  {
+    "District": "New Hampshire",
+    "Name": "Maggie Hassan",
+    "Party": "Democratic",
+    "Birthdate": "February 27, 1958"
+  },
+  {
+    "District": "New Jersey",
+    "Name": "Bob Menendez",
+    "Party": "Democratic",
+    "Birthdate": "January 1, 1954"
+  },
+  {
+    "District": "New Jersey",
+    "Name": "Cory Booker",
+    "Party": "Democratic",
+    "Birthdate": "April 27, 1969"
+  },
+  {
+    "District": "New Mexico",
+    "Name": "Martin Heinrich",
+    "Party": "Democratic",
+    "Birthdate": "October 17, 1971"
+  },
+  {
+    "District": "New Mexico",
+    "Name": "Ben Ray Luján",
+    "Party": "Democratic",
+    "Birthdate": "June 7, 1972"
+  },
+  {
+    "District": "New York",
+    "Name": "Chuck Schumer",
+    "Party": "Democratic",
+    "Birthdate": "November 23, 1950"
+  },
+  {
+    "District": "New York",
+    "Name": "Kirsten Gillibrand",
+    "Party": "Democratic",
+    "Birthdate": "December 9, 1966"
+  },
+  {
+    "District": "North Carolina",
+    "Name": "Thom Tillis",
+    "Party": "Republican",
+    "Birthdate": "August 30, 1960"
+  },
+  {
+    "District": "North Carolina",
+    "Name": "Ted Budd",
+    "Party": "Republican",
+    "Birthdate": "October 21, 1971"
+  },
+  {
+    "District": "North Dakota",
+    "Name": "John Hoeven",
+    "Party": "Republican",
+    "Birthdate": "March 13, 1957"
+  },
+  {
+    "District": "North Dakota",
+    "Name": "Kevin Cramer",
+    "Party": "Republican",
+    "Birthdate": "January 21, 1961"
+  },
+  {
+    "District": "Ohio",
+    "Name": "Sherrod Brown",
+    "Party": "Democratic",
+    "Birthdate": "November 9, 1952"
+  },
+  {
+    "District": "Ohio",
+    "Name": "J. D. Vance",
+    "Party": "Republican",
+    "Birthdate": "August 2, 1984"
+  },
+  {
+    "District": "Oklahoma",
+    "Name": "James Lankford",
+    "Party": "Republican",
+    "Birthdate": "March 4, 1968"
+  },
+  {
+    "District": "Oklahoma",
+    "Name": "Markwayne Mullin",
+    "Party": "Republican",
+    "Birthdate": "July 26, 1977"
+  },
+  {
+    "District": "Oregon",
+    "Name": "Ron Wyden",
+    "Party": "Democratic",
+    "Birthdate": "May 3, 1949"
+  },
+  {
+    "District": "Oregon",
+    "Name": "Jeff Merkley",
+    "Party": "Democratic",
+    "Birthdate": "October 24, 1956"
+  },
+  {
+    "District": "Pennsylvania",
+    "Name": "Bob Casey Jr.",
+    "Party": "Democratic",
+    "Birthdate": "April 13, 1960"
+  },
+  {
+    "District": "Pennsylvania",
+    "Name": "John Fetterman",
+    "Party": "Democratic",
+    "Birthdate": "August 15, 1969"
+  },
+  {
+    "District": "Rhode Island",
+    "Name": "Jack Reed",
+    "Party": "Democratic",
+    "Birthdate": "November 12, 1949"
+  },
+  {
+    "District": "Rhode Island",
+    "Name": "Sheldon Whitehouse",
+    "Party": "Democratic",
+    "Birthdate": "October 20, 1955"
+  },
+  {
+    "District": "South Carolina",
+    "Name": "Lindsey Graham",
+    "Party": "Republican",
+    "Birthdate": "July 9, 1955"
+  },
+  {
+    "District": "South Carolina",
+    "Name": "Tim Scott",
+    "Party": "Republican",
+    "Birthdate": "September 19, 1965"
+  },
+  {
+    "District": "South Dakota",
+    "Name": "John Thune",
+    "Party": "Republican",
+    "Birthdate": "January 7, 1961"
+  },
+  {
+    "District": "South Dakota",
+    "Name": "Mike Rounds",
+    "Party": "Republican",
+    "Birthdate": "October 24, 1954"
+  },
+  {
+    "District": "Tennessee",
+    "Name": "Marsha Blackburn",
+    "Party": "Republican",
+    "Birthdate": "June 6, 1952"
+  },
+  {
+    "District": "Tennessee",
+    "Name": "Bill Hagerty",
+    "Party": "Republican",
+    "Birthdate": "August 14, 1959"
+  },
+  {
+    "District": "Texas",
+    "Name": "John Cornyn",
+    "Party": "Republican",
+    "Birthdate": "February 2, 1952"
+  },
+  {
+    "District": "Texas",
+    "Name": "Ted Cruz",
+    "Party": "Republican",
+    "Birthdate": "December 22, 1970"
+  },
+  {
+    "District": "Utah",
+    "Name": "Mike Lee",
+    "Party": "Republican",
+    "Birthdate": "June 4, 1971"
+  },
+  {
+    "District": "Utah",
+    "Name": "Mitt Romney",
+    "Party": "Republican",
+    "Birthdate": "March 12, 1947"
+  },
+  {
+    "District": "Vermont",
+    "Name": "Bernie Sanders",
+    "Party": "Independent[n]",
+    "Birthdate": "September 8, 1941"
+  },
+  {
+    "District": "Vermont",
+    "Name": "Peter Welch",
+    "Party": "Democratic",
+    "Birthdate": "May 2, 1947"
+  },
+  {
+    "District": "Virginia",
+    "Name": "Mark Warner",
+    "Party": "Democratic",
+    "Birthdate": "December 15, 1954"
+  },
+  {
+    "District": "Virginia",
+    "Name": "Tim Kaine",
+    "Party": "Democratic",
+    "Birthdate": "February 26, 1958"
+  },
+  {
+    "District": "Washington",
+    "Name": "Patty Murray",
+    "Party": "Democratic",
+    "Birthdate": "October 11, 1950"
+  },
+  {
+    "District": "Washington",
+    "Name": "Maria Cantwell",
+    "Party": "Democratic",
+    "Birthdate": "October 13, 1958"
+  },
+  {
+    "District": "West Virginia",
+    "Name": "Joe Manchin",
+    "Party": "Democratic",
+    "Birthdate": "August 24, 1947"
+  },
+  {
+    "District": "West Virginia",
+    "Name": "Shelley Moore Capito",
+    "Party": "Republican",
+    "Birthdate": "November 26, 1953"
+  },
+  {
+    "District": "Wisconsin",
+    "Name": "Ron Johnson",
+    "Party": "Republican",
+    "Birthdate": "April 8, 1955"
+  },
+  {
+    "District": "Wisconsin",
+    "Name": "Tammy Baldwin",
+    "Party": "Democratic",
+    "Birthdate": "February 11, 1962"
+  },
+  {
+    "District": "Wyoming",
+    "Name": "John Barrasso",
+    "Party": "Republican",
+    "Birthdate": "July 21, 1952"
+  },
+  {
+    "District": "Wyoming",
+    "Name": "Cynthia Lummis",
+    "Party": "Republican",
+    "Birthdate": "September 10, 1954"
+  }
+]
 
-const congressMemberAges = congressData.map(m => (Date.now() - Date.parse(m.Birthdate))/(1000*60*60*24*365.25))
 
-const membersOfCongressPerAge = congressData.reduce((acc, cur) => {
+const membersOfCongressPerAge = (data) => data.reduce((acc, cur) => {
   const age = Math.round((Date.now() - Date.parse(cur.Birthdate))/(1000*60*60*24*365.25));
   if (acc[age]){
     acc[age] = acc[age]+1
@@ -2643,15 +3243,10 @@ const membersOfCongressPerAge = congressData.reduce((acc, cur) => {
   return acc;
 }, {})
 
-// const partyAffiliations = congressData.reduce((acc, cur) => {
-//   return acc.includes(cur.Party) ? acc : acc.concat([cur.Party])
-// }, [])
-
-console.log(membersOfCongressPerAge)
+console.log(membersOfCongressPerAge(senateData))
 
 module.exports = {
-  congressData,
-  congressMemberAges,
-  congressMemberNames,
+  houseData,
+  senateData,
   membersOfCongressPerAge
 }

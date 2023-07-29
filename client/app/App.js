@@ -1,11 +1,10 @@
 import React from 'react';
-import CongressAgeChart from './CongressAgeChart';
-import congressVsAmericaAges from '../../data/congressAgeChartData';
+import CongressVsAmericaAgeChart from './CongressVsAmericaAgeChart';
 
 const App = () => {
   return (
     <div>
-      <CongressAgeChart chartData={congressVsAmericaAges}/>
+      <CongressVsAmericaAgeChart/>
     </div>
   )
 }
