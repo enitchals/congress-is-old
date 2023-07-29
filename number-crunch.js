@@ -1,4 +1,4 @@
-const congressData = require('./congress-data');
+const {congressData} = require('./congress-data');
 const americanAgeData = require('./age-data');
 
 const getAverageOfPopulationData = () => {
