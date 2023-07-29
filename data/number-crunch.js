@@ -21,3 +21,17 @@ const getAverageOfCongressionalData = () => {
   },0)
   return totalAge/totalPop;
 }
+
+const getDistributionFromRawData = (data) => {
+  let total = Object.keys(data).reduce((acc, cur) => acc + data[cur], 0);
+  const distribution = Object.keys(data).reduce((acc, cur) => {
+    const percentage = (data[cur]/total) * 100;
+    acc[cur] = percentage;
+    return acc;
+  }, {})
+  return distribution
+}
+
+module.exports = {
+  getDistributionFromRawData
+}

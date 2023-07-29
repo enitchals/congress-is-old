@@ -2629,9 +2629,29 @@ const congressData = [
   }
 ]
 
-const congressAgeDataPoints = congressData.map(m => (Date.now() - Date.parse(m.Birthdate))/(1000*60*60*24*365.25))
+const congressMemberNames = congressData.map(m => m.name)
+
+const congressMemberAges = congressData.map(m => (Date.now() - Date.parse(m.Birthdate))/(1000*60*60*24*365.25))
+
+const membersOfCongressPerAge = congressData.reduce((acc, cur) => {
+  const age = Math.round((Date.now() - Date.parse(cur.Birthdate))/(1000*60*60*24*365.25));
+  if (acc[age]){
+    acc[age] = acc[age]+1
+  } else {
+    acc[age] = 1
+  }
+  return acc;
+}, {})
+
+// const partyAffiliations = congressData.reduce((acc, cur) => {
+//   return acc.includes(cur.Party) ? acc : acc.concat([cur.Party])
+// }, [])
+
+console.log(membersOfCongressPerAge)
 
 module.exports = {
   congressData,
-  congressAgeDataPoints
+  congressMemberAges,
+  congressMemberNames,
+  membersOfCongressPerAge
 }

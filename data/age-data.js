@@ -99,8 +99,7 @@ const americanAgeData = {
   97: 109622,
   98: 78028,
   99: 53870,
-  100: 88988,
-  total: 333287557
+  100: 88988
 }
 
 module.exports = americanAgeData;
