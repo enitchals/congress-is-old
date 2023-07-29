@@ -56,14 +56,14 @@ const CongressVsAmericaAgeChart = () => {
 
   console.log(getDistributionFromRawData(americanData))
   return (
-    <>
+    <div className="age-distribution-chart">
     <div className='chart-title'>
       <div>Age distribution for</div>
       <select className="inline-input" onChange={updateAmericanData}>
         <option value={0}>All Americans</option>
-        <option value={18}>Americans old enough to vote</option>
-        <option value={25}>Americans old enough to run for House</option>
-        <option value={30}>Americans old enough to run for Senate</option>
+        <option value={18}>old enough to vote</option>
+        <option value={25}>old enough to run for House</option>
+        <option value={30}>old enough to run for Senate</option>
       </select>
       <div>vs</div>
       <select className="inline-input" onChange={updateCongressData}>
@@ -73,6 +73,7 @@ const CongressVsAmericaAgeChart = () => {
       </select>
       </div>
       <Bar
+        className='bar-chart'
         data={chartData}
         options={{
           plugins: {
@@ -82,7 +83,7 @@ const CongressVsAmericaAgeChart = () => {
           },
         }}
         />
-      </>
+      </div>
   )
 }
 

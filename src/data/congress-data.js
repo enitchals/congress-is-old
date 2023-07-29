@@ -3245,8 +3245,11 @@ const membersOfCongressPerAge = (data) => data.reduce((acc, cur) => {
 
 console.log(membersOfCongressPerAge(senateData))
 
+const congressData = houseData.concat(senateData);
+
 module.exports = {
   houseData,
   senateData,
+  congressData,
   membersOfCongressPerAge
 }

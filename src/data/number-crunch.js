@@ -32,6 +32,28 @@ const getDistributionFromRawData = (data) => {
   return distribution
 }
 
+const getStatsFromAge = (age, dataset=congressData) => {
+
+  let younger = 0;
+  let yourAge = 0;
+  let older = 0;
+  for(person in dataset){
+    console.log(dataset[person].Birthdate)
+    const personAge = Math.round((Date.now() - Date.parse(dataset[person].Birthdate))/(1000*60*60*24*365.25));
+    const ageDiff = personAge-age;
+    if (ageDiff > 2){
+      console.log("older")
+      older = older+1
+    } else if (ageDiff < -2){
+      younger = younger+1
+    } else {
+      yourAge = yourAge+1
+    }
+  }
+  return [younger, yourAge, older]
+}
+
 module.exports = {
-  getDistributionFromRawData
+  getDistributionFromRawData,
+  getStatsFromAge
 }

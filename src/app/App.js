@@ -1,11 +1,17 @@
 import React from 'react';
 
 import CongressVsAmericaAgeChart from './CongressVsAmericaAgeChart';
+import MyAge from './MyAge';
 
 const App = () => {
   return (
-    <div>
-      <CongressVsAmericaAgeChart/>
+    <div className='App'>
+      <section className='header'>
+      </section>
+      <section className='main-content'>
+        <CongressVsAmericaAgeChart/>
+        <MyAge/>
+      </section>
     </div>
   )
 }
