@@ -32,8 +32,7 @@ const getDistributionFromRawData = (data) => {
   return distribution
 }
 
-const getStatsFromAge = (age, dataset=congressData) => {
-
+const getCongressStatsFromAge = (age, dataset=congressData) => {
   let younger = 0;
   let yourAge = 0;
   let older = 0;
@@ -53,7 +52,24 @@ const getStatsFromAge = (age, dataset=congressData) => {
   return [younger, yourAge, older]
 }
 
+const getAmericansStatsFromAge = (age) => {
+  let younger = 0;
+  let yourAge = 0;
+  let older = 0;
+  for (dataPoint in americanAgeData){
+    if (dataPoint<age-3){
+      younger = younger+americanAgeData[dataPoint];
+    } else if (dataPoint>age+3){
+      older = older+americanAgeData[dataPoint];
+    } else {
+      yourAge = yourAge+americanAgeData[dataPoint];
+    }
+  }
+  return [younger, yourAge, older]
+}
+
 module.exports = {
   getDistributionFromRawData,
-  getStatsFromAge
+  getCongressStatsFromAge,
+  getAmericansStatsFromAge
 }

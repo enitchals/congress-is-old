@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import CongressVsMe from './CongressVsMe';
-import { getStatsFromAge } from '../data/number-crunch';
+import {  getCongressStatsFromAge } from '../data/number-crunch';
 
 const MyAge = () => {
   const [age, setAge] = useState(null);
@@ -14,13 +14,15 @@ const MyAge = () => {
     </div>
   )
 
+  const congressData =  getCongressStatsFromAge(age)
+
   return (
     <div className='my-age'>
       {!show && ageInput}
       {show && (
         <div className="age-chart">
           <p>If you're {age}, Congress is...</p>
-          <CongressVsMe data={getStatsFromAge(age)}/>
+          <CongressVsMe data={congressData}/>
         </div>
       )}
     </div>

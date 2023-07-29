@@ -6,8 +6,6 @@ import MyAge from './MyAge';
 const App = () => {
   return (
     <div className='App'>
-      <section className='header'>
-      </section>
       <section className='main-content'>
         <CongressVsAmericaAgeChart/>
         <MyAge/>
