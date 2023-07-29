@@ -1,302 +1,302 @@
-export const congressData = [
+const congressData = [
   {
     "District": "CA-31",
     "Name": "Grace F. Napolitano",
-    "Birthdate": "12/4/36",
+    "Birthdate": "12/4/1936",
     "Party": "Democratic"
   },
   {
     "District": "DC-AL",
     "Name": "Eleanor Holmes Norton",
-    "Birthdate": "6/13/37",
+    "Birthdate": "6/13/1937",
     "Party": "Democratic"
   },
   {
     "District": "KY-05",
     "Name": "Harold Rogers",
-    "Birthdate": "12/31/37",
+    "Birthdate": "12/31/1937",
     "Party": "Republican"
   },
   {
     "District": "NJ-09",
     "Name": "Bill Pascrell Jr.",
-    "Birthdate": "1/25/37",
+    "Birthdate": "1/25/1937",
     "Party": "Democratic"
   },
   {
     "District": "CA-43",
     "Name": "Maxine Waters",
-    "Birthdate": "8/15/38",
+    "Birthdate": "8/15/1938",
     "Party": "Democratic"
   },
   {
     "District": "MD-05",
     "Name": "Steny H. Hoyer",
-    "Birthdate": "6/14/39",
+    "Birthdate": "6/14/1939",
     "Party": "Democratic"
   },
   {
     "District": "SC-06",
     "Name": "James E. Clyburn",
-    "Birthdate": "7/21/40",
+    "Birthdate": "7/21/1940",
     "Party": "Democratic"
   },
   {
     "District": "CA-11",
     "Name": "Nancy Pelosi",
-    "Birthdate": "3/26/40",
+    "Birthdate": "3/26/1940",
     "Party": "Democratic"
   },
   {
     "District": "IL-07",
     "Name": "Danny K. Davis",
-    "Birthdate": "9/6/41",
+    "Birthdate": "9/6/1941",
     "Party": "Democratic"
   },
   {
     "District": "TX-31",
     "Name": "John Carter",
-    "Birthdate": "11/6/41",
+    "Birthdate": "11/6/1941",
     "Party": "Republican"
   },
   {
     "District": "CA-16",
     "Name": "Anna G. Eshoo",
-    "Birthdate": "12/13/42",
+    "Birthdate": "12/13/1942",
     "Party": "Democratic"
   },
   {
     "District": "FL-24",
     "Name": "Frederica S. Wilson",
-    "Birthdate": "11/5/42",
+    "Birthdate": "11/5/1942",
     "Party": "Democratic"
   },
   {
     "District": "CT-03",
     "Name": "Rosa DeLauro",
-    "Birthdate": "3/2/43",
+    "Birthdate": "3/2/1943",
     "Party": "Democratic"
   },
   {
     "District": "NC-05",
     "Name": "Virginia Foxx",
-    "Birthdate": "6/29/43",
+    "Birthdate": "6/29/1943",
     "Party": "Republican"
   },
   {
     "District": "TX-12",
     "Name": "Kay Granger",
-    "Birthdate": "1/18/43",
+    "Birthdate": "1/18/1943",
     "Party": "Republican"
   },
   {
     "District": "CA-07",
     "Name": "Doris Matsui",
-    "Birthdate": "9/25/44",
+    "Birthdate": "9/25/1944",
     "Party": "Democratic"
   },
   {
     "District": "IL-09",
     "Name": "Jan Schakowsky",
-    "Birthdate": "5/26/44",
+    "Birthdate": "5/26/1944",
     "Party": "Democratic"
   },
   {
     "District": "MO-05",
     "Name": "Emanuel Cleaver II",
-    "Birthdate": "10/26/44",
+    "Birthdate": "10/26/1944",
     "Party": "Democratic"
   },
   {
     "District": "GA-13",
     "Name": "David Scott",
-    "Birthdate": "6/27/45",
+    "Birthdate": "6/27/1945",
     "Party": "Democratic"
   },
   {
     "District": "IN-04",
     "Name": "Jim Baird",
-    "Birthdate": "6/4/45",
+    "Birthdate": "6/4/1945",
     "Party": "Republican"
   },
   {
     "District": "NJ-12",
     "Name": "Bonnie Watson Coleman",
-    "Birthdate": "2/6/45",
+    "Birthdate": "2/6/1945",
     "Party": "Democratic"
   },
   {
     "District": "CA-08",
     "Name": "John Garamendi",
-    "Birthdate": "1/24/45",
+    "Birthdate": "1/24/1945",
     "Party": "Democratic"
   },
   {
     "District": "OH-09",
     "Name": "Marcy Kaptur",
-    "Birthdate": "6/17/46",
+    "Birthdate": "6/17/1946",
     "Party": "Democratic"
   },
   {
     "District": "TX-37",
     "Name": "Lloyd Doggett",
-    "Birthdate": "10/6/46",
+    "Birthdate": "10/6/1946",
     "Party": "Democratic"
   },
   {
     "District": "CA-12",
     "Name": "Barbara Lee",
-    "Birthdate": "7/16/46",
+    "Birthdate": "7/16/1946",
     "Party": "Democratic"
   },
   {
     "District": "NC-12",
     "Name": "Alma Adams",
-    "Birthdate": "5/27/46",
+    "Birthdate": "5/27/1946",
     "Party": "Democratic"
   },
   {
     "District": "MD-02",
     "Name": "C.A. Dutch Ruppersberger",
-    "Birthdate": "1/31/46",
+    "Birthdate": "1/31/1946",
     "Party": "Democratic"
   },
   {
     "District": "TX-09",
     "Name": "Al Green",
-    "Birthdate": "9/1/47",
+    "Birthdate": "9/1/1947",
     "Party": "Democratic"
   },
   {
     "District": "VA-03",
     "Name": "Robert C. Scott",
-    "Birthdate": "4/30/47",
+    "Birthdate": "4/30/1947",
     "Party": "Democratic"
   },
   {
     "District": "GA-02",
     "Name": "Sanford D. Bishop Jr.",
-    "Birthdate": "2/4/47",
+    "Birthdate": "2/4/1947",
     "Party": "Democratic"
   },
   {
     "District": "NY-12",
     "Name": "Jerrold Nadler",
-    "Birthdate": "6/13/47",
+    "Birthdate": "6/13/1947",
     "Party": "Democratic"
   },
   {
     "District": "CA-18",
     "Name": "Zoe Lofgren",
-    "Birthdate": "12/21/47",
+    "Birthdate": "12/21/1947",
     "Party": "Democratic"
   },
   {
     "District": "FL-08",
     "Name": "Bill Posey",
-    "Birthdate": "12/18/47",
+    "Birthdate": "12/18/1947",
     "Party": "Republican"
   },
   {
     "District": "AS-AL",
     "Name": "Aumua Amata Coleman Radewagen",
-    "Birthdate": "12/29/47",
+    "Birthdate": "12/29/1947",
     "Party": "Republican"
   },
   {
     "District": "SC-02",
     "Name": "Joe Wilson",
-    "Birthdate": "7/31/47",
+    "Birthdate": "7/31/1947",
     "Party": "Republican"
   },
   {
     "District": "MI-01",
     "Name": "Jack Bergman",
-    "Birthdate": "2/2/47",
+    "Birthdate": "2/2/1947",
     "Party": "Republican"
   },
   {
     "District": "FL-22",
     "Name": "Lois Frankel",
-    "Birthdate": "5/16/48",
+    "Birthdate": "5/16/1948",
     "Party": "Democratic"
   },
   {
     "District": "MS-02",
     "Name": "Bennie Thompson",
-    "Birthdate": "1/28/48",
+    "Birthdate": "1/28/1948",
     "Party": "Democratic"
   },
   {
     "District": "OR-03",
     "Name": "Earl Blumenauer",
-    "Birthdate": "8/16/48",
+    "Birthdate": "8/16/1948",
     "Party": "Democratic"
   },
   {
     "District": "CT-01",
     "Name": "John B. Larson",
-    "Birthdate": "7/22/48",
+    "Birthdate": "7/22/1948",
     "Party": "Democratic"
   },
   {
     "District": "AZ-07",
     "Name": "Raul M. Grijalva",
-    "Birthdate": "2/19/48",
+    "Birthdate": "2/19/1948",
     "Party": "Democratic"
   },
   {
     "District": "PA-16",
     "Name": "Mike Kelly",
-    "Birthdate": "5/10/48",
+    "Birthdate": "5/10/1948",
     "Party": "Republican"
   },
   {
     "District": "TX-36",
     "Name": "Brian Babin",
-    "Birthdate": "3/23/48",
+    "Birthdate": "3/23/1948",
     "Party": "Republican"
   },
   {
     "District": "MD-07",
     "Name": "Kweisi Mfume",
-    "Birthdate": "10/24/48",
+    "Birthdate": "10/24/1948",
     "Party": "Democratic"
   },
   {
     "District": "NY-20",
     "Name": "Paul Tonko",
-    "Birthdate": "6/18/49",
+    "Birthdate": "6/18/1949",
     "Party": "Democratic"
   },
   {
     "District": "TN-09",
     "Name": "Steve Cohen",
-    "Birthdate": "5/24/49",
+    "Birthdate": "5/24/1949",
     "Party": "Democratic"
   },
   {
     "District": "OK-04",
     "Name": "Tom Cole",
-    "Birthdate": "4/28/49",
+    "Birthdate": "4/28/1949",
     "Party": "Republican"
   },
   {
     "District": "TX-25",
     "Name": "Roger Williams",
-    "Birthdate": "9/13/49",
+    "Birthdate": "9/13/1949",
     "Party": "Republican"
   },
   {
     "District": "MA-01",
     "Name": "Richard E. Neal",
-    "Birthdate": "2/14/49",
+    "Birthdate": "2/14/1949",
     "Party": "Democratic"
   },
   {
     "District": "FL-11",
     "Name": "Daniel Webster",
-    "Birthdate": "4/27/49",
+    "Birthdate": "4/27/1949",
     "Party": "Republican"
   },
   {
@@ -2628,3 +2628,5 @@ export const congressData = [
     "Party": "Democratic"
   }
 ]
+
+module.exports = congressData;
