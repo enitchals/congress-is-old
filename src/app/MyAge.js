@@ -17,7 +17,12 @@ const MyAge = () => {
   return (
     <div className='my-age'>
       {!show && ageInput}
-      {show && <CongressVsMe data={getStatsFromAge(age)}/>}
+      {show && (
+        <div className="age-chart">
+          <p>If you're {age}, Congress is...</p>
+          <CongressVsMe data={getStatsFromAge(age)}/>
+        </div>
+      )}
     </div>
   )
 }

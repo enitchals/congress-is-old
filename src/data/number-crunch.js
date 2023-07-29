@@ -41,10 +41,10 @@ const getStatsFromAge = (age, dataset=congressData) => {
     console.log(dataset[person].Birthdate)
     const personAge = Math.round((Date.now() - Date.parse(dataset[person].Birthdate))/(1000*60*60*24*365.25));
     const ageDiff = personAge-age;
-    if (ageDiff > 2){
+    if (ageDiff > 3){
       console.log("older")
       older = older+1
-    } else if (ageDiff < -2){
+    } else if (ageDiff < -3){
       younger = younger+1
     } else {
       yourAge = yourAge+1

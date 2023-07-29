@@ -7,7 +7,7 @@ const CongressVsMe = ({data}) => {
   console.log(data)
   const chartData = {
     labels: [
-      `Younger`, 'Your Age', 'Older'
+      `Younger than you`, 'Your Age (+/3 years)', 'Older than you'
     ],
     datasets: [
       {
