@@ -3,11 +3,7 @@ const path = require('path');
 
 const app = express();
 
-// body parsing
 app.use(express.json())
-
-// api routes
-// app.use('/api', require('./api'));
 
 app.get('/', (req, res) => res.sendFile(path.join(__dirname, '..', 'public/index.html')));
 
