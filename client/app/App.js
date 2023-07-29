@@ -1,11 +1,11 @@
 import React from 'react';
+import CongressAgeChart from './CongressAgeChart';
+import congressVsAmericaAges from '../../data/congressAgeChartData';
 
 const App = () => {
   return (
     <div>
-      // menu (sidebar)
-      // navbar
-      // page content
+      <CongressAgeChart chartData={congressVsAmericaAges}/>
     </div>
   )
 }
