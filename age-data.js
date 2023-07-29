@@ -1,4 +1,4 @@
-export const numAmericansByAge = {
+const americanAgeData = {
   0: 3683113,
   1: 3588817,
   2: 3693362,
@@ -102,3 +102,5 @@ export const numAmericansByAge = {
   100: 88988,
   total: 333287557
 }
+
+module.exports = americanAgeData;
