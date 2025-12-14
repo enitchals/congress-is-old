@@ -1,0 +1,141 @@
+body {
+  background-color: slategray;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  height: 50px;
+  width: 100%;
+  font-size: 30px;
+  font-family: sans-serif;
+  line-height: 26px;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black;
+  border-radius: 3px;
+  background-color: white;
+  margin: 20px 0;
+}
+
+.chart-title {
+  display: flex;
+  height: 40px;
+  font-size: 20px;
+  font-family: sans-serif;
+  line-height: 26px;
+  font-weight: 300;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+  padding-left: 10px;
+  border: 2px solid black;
+  border-radius: 3px;
+  background-color: white;
+}
+
+.age-chart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.inline-input {
+  margin: 0px 10px;
+  height: 26px;
+  font-size: 20px;
+}
+
+.bar-chart {
+  border: 2px solid black;
+  border-radius: 3px;
+  background-color: white;
+  min-width: 550px;
+  max-width: 1000px;
+  flex-grow: 1;
+  padding: 10px;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.my-age {
+  border: 2px solid black;
+  border-radius: 3px;
+  background-color: white;
+  min-width: 300px;
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  font-size: 20px;
+  font-family: sans-serif;
+  line-height: 26px;
+  font-weight: 300;
+  justify-content: center;
+  height: 100%;
+}
+
+.age-input-row {
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 0;
+}
+
+.number-input {
+  max-width: 50px;
+}
+
+.go-button {
+  min-height: 26px;
+  min-width: 26px;
+}
+
+.pie-chart {
+  width: 280px;
+  height: 280px;
+  margin-bottom: 30px;
+}
+
+.age-distribution-chart {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+@media (max-width: 1000px) {
+  .main-content {
+    flex-direction: column;
+  }
+  .my-age {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 680px) {
+  .chart-title {
+    flex-direction: column;
+    min-height: 140px;
+  }
+  .bar-chart {
+    min-width: 90vw;
+  }
+  .my-age {
+    margin-left: 0;
+    margin-top: 10px;
+    min-width: 90vw;
+  }
+}
