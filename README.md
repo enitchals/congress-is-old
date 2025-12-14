@@ -4,6 +4,9 @@ A data analysis project comparing the age distribution of Americans to the age d
 ## Try it out
 [View the project live!](https://congress-is-old.wtf/)
 
+## Data Sources
+[population data](https://www.census.gov/data/tables/time-series/demo/popest/2020s-national-detail.html)
+
 ## Development
 
 ### Setup
@@ -37,6 +40,3 @@ This command will:
 2. Deploy the `public/` directory contents to the `gh-pages` branch
 
 The `.nojekyll` file in the `public/` directory ensures GitHub Pages doesn't process the files with Jekyll.
-
-## To Do
-[Task Board](https://github.com/users/enitchals/projects/8)

@@ -1,13 +1,13 @@
 import React from 'react';
 
-import CongressVsAmericaAgeChart from './CongressVsAmericaAgeChart';
-import MyAge from './MyAge';
+import CongressVsAmericaAgeChart from './CongressVsAmericaAgeChart.js';
+import MyAge from './MyAge.js';
 
 const App = () => {
   return (
     <div className='App'>
       <section className='header'>
-        Congress is old(er than the average American)!
+        Congress is Old!
       </section>
       <section className='main-content'>
         <CongressVsAmericaAgeChart/>

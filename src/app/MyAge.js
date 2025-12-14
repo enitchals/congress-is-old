@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import CongressVsMe from './CongressVsMe';
-import {  getCongressStatsFromAge } from '../data/number-crunch';
+import CongressVsMe from './CongressVsMe.js';
+import {  getCongressStatsFromAge } from '../data/number-crunch.js';
 
 const MyAge = () => {
   const [age, setAge] = useState(null);

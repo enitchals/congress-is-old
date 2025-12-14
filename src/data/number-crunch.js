@@ -1,5 +1,5 @@
-const {congressData} = require('./congress-data');
-const americanAgeData = require('./age-data');
+import { congressData } from './congress-data.js';
+import americanAgeData from './age-data.js';
 
 const getAverageOfPopulationData = () => {
   let totalAge = 0;
@@ -36,7 +36,7 @@ const getCongressStatsFromAge = (age, dataset=congressData) => {
   let younger = 0;
   let yourAge = 0;
   let older = 0;
-  for(person in dataset){
+  for(const person in dataset){
     console.log(dataset[person].Birthdate)
     const personAge = Math.round((Date.now() - Date.parse(dataset[person].Birthdate))/(1000*60*60*24*365.25));
     const ageDiff = personAge-age;
@@ -56,7 +56,7 @@ const getAmericansStatsFromAge = (age) => {
   let younger = 0;
   let yourAge = 0;
   let older = 0;
-  for (dataPoint in americanAgeData){
+  for (const dataPoint in americanAgeData){
     if (dataPoint<age-3){
       younger = younger+americanAgeData[dataPoint];
     } else if (dataPoint>age+3){
@@ -68,7 +68,7 @@ const getAmericansStatsFromAge = (age) => {
   return [younger, yourAge, older]
 }
 
-module.exports = {
+export {
   getDistributionFromRawData,
   getCongressStatsFromAge,
   getAmericansStatsFromAge

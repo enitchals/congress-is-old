@@ -1,4 +1,10 @@
-module.exports = (env, argv) => {
+import { fileURLToPath } from 'url';
+import { dirname } from 'path';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
+
+export default (env, argv) => {
   const isProduction = argv.mode === 'production';
   
   return {

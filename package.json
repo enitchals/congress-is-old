@@ -2,6 +2,7 @@
   "name": "congress-is-old",
   "version": "1.0.0",
   "description": "",
+  "type": "module",
   "main": "index.js",
   "scripts": {
     "build": "webpack --mode=production",
@@ -20,6 +21,7 @@
     "@babel/register": "^7.21.0",
     "babel-loader": "^9.1.2",
     "chart.js": "^4.3.2",
+    "cheerio": "^1.1.2",
     "css-loader": "^6.8.1",
     "react": "^18.2.0",
     "react-chartjs-2": "^5.2.0",
