@@ -4,12 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build-dev": "npm run build -- --watch --mode=development",
-    "start-dev": "npm run build-dev & npm run start-server",
-    "start-server": "nodemon server -e html,js,css,scss --ignore public --ignore src",
-    "build": "webpack",
-    "build-prod": "react-scripts build",
-    "seed": "node seed.js",
+    "build": "webpack --mode=production",
+    "build-dev": "webpack --watch --mode=development",
+    "start": "http-server public -p 8080 -o",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d public",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
@@ -22,8 +21,6 @@
     "babel-loader": "^9.1.2",
     "chart.js": "^4.3.2",
     "css-loader": "^6.8.1",
-    "express": "^4.18.2",
-    "path": "^0.12.7",
     "react": "^18.2.0",
     "react-chartjs-2": "^5.2.0",
     "react-dom": "^18.2.0",
@@ -32,6 +29,10 @@
     "style-loader": "^3.3.3",
     "webpack": "^5.76.0",
     "webpack-cli": "^5.0.1"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.1.1",
+    "http-server": "^14.1.1"
   },
   "browserslist": {
     "production": [
